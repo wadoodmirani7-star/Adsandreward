@@ -177,16 +177,16 @@
         .modal h2 { color: var(--primary-color); margin-bottom: 15px; }
         .modal p { color: var(--text-muted); margin-bottom: 25px; }
     </style>
+
     
-    <!-- Adsterra Code 1 -->
-    <script src="https://pl30232043.effectivecpmnetwork.com/76/fb/16/76fb169dfc76781c228bb8083971be43.js"></script>
     
     <!-- Adsterra Code 2 -->
     <script src="https://pl30235165.effectivecpmnetwork.com/ee/60/1b/ee601bf5bd57e282cb711690776e6a17.js"></script>
 
 </head>
 <body>
-
+<!-- Adsterra Code 1 -->
+    <script src="https://pl30232043.effectivecpmnetwork.com/76/fb/16/76fb169dfc76781c228bb8083971be43.js"></script>
     <div class="container">
         <!-- Main Page: Ad Display -->
         <div id="page-ads" class="page active-page">
@@ -292,9 +292,20 @@
 
         function updateProgressDisplay() {
             document.getElementById('progress-display').innerText = `Ads Watched: ${adsWatched} | Total Earnings: ${totalEarnings} RS`;
-        }
-
         function generateAds() {
+    const container = document.getElementById('ad-container');
+    for (let i = 1; i <= 60; i++) {
+        const adSlot = document.createElement('div');
+        adSlot.className = 'ad-slot';
+        
+        const s = document.createElement('script');
+        s.src = 'https://pl30235165.effectivecpmnetwork.com/ee/60/1b/ee601bf5bd57e282cb711690776e6a17.js';
+        adSlot.appendChild(s);
+        
+        container.appendChild(adSlot);
+    }
+        }
+            
             const container = document.getElementById('ad-container');
             for (let i = 1; i <= 100; i++) {
                 const adSlot = document.createElement('div');
